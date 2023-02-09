@@ -12,7 +12,7 @@
       <h1>Welcome to Wesley's web portfolio</h1>
       
     
-        <img src="./assets/images/IMG-2a02cd0f866ef53c02233e414e3a1d67-V.jpg" style="width:200px;height:250px;" />
+        <img id="headpic" src="./assets/images/IMG-2a02cd0f866ef53c02233e414e3a1d67-V.jpg"  />
     
       <p>
         It is not who you know, it is what you know !!!
@@ -22,7 +22,7 @@
     <!-- Navbar -->
     <nav>
       <a href="https://github.com/WesleyPalov" target="_blank">My Github</a>
-      <a href="#">About me</a>
+      <a href="#section-reach1">About me</a>
       <a href="#Section-Reach">Contact Me</a>
       <a href="#">My hobbie</a>
      
@@ -41,10 +41,10 @@
       <div class="products">
         <section class="card">
           <header>MyGitHub</header>
-          <img src="./assets/images/download.png" alt="Giyhub img" />
+          <img src="./assets/images/download.png" alt="Github img" />
           <p><a href="https://wesleypalov.github.io/MiniPro/" target="_blank">My HTML practice</a></p>
         </section>
-        <section class="card">
+        <section class="card" id="section-reach1">
           <header>About Me</header>
           <img src="./assets/images/what-is-coding-1024x683.jpg" alt="what is coding" />
           <p>I do not have experience in coding, but i am learning.</p>
@@ -70,15 +70,17 @@
     </main>
 
 </section>
-<section class="Section-Reach">
+<section id="Section-Reach">
    <h2>Contact me</h2>
-   <form action="./assets/20230122_205737.jpg">
+   <div>
        <label for="fname">First Last name:</label><br>
        <input type="text" id="fname" name="fname" value=""><br>
        <label for="lname">Email:</label><br>
        <input type="text" id="lname" name="lname" value=""><br><br>
-       <input type="submit" value="Submit">
-     </form> 
+      <a href="mailto:wesleypalov@yahoo.com?subject=Contact from my web portfolio">
+        <input type="submit" value="Submit">
+      </a>
+   </div> 
 </section>
     <footer>Wesley Palov 2023</footer>
       </body>
